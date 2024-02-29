@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Aplicación de Adopción de Animales</title>
-    <link
-    rel="shortcut icon"
-    href="http://1.bp.blogspot.com/-QhpGTzO141I/Uw94ycN3lTI/AAAAAAAADaI/uGzAr00nY2I/s1600/333.png"
-    type="image/x-icon" 
-    
-  />
-    <link
-    rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"/>
+    <!-- En el encabezado de tu HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="http://1.bp.blogspot.com/-QhpGTzO141I/Uw94ycN3lTI/AAAAAAAADaI/uGzAr00nY2I/s1600/333.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -29,8 +24,9 @@
             <p>__________________________________________</p>
             <div class="main-menu">
                 <div>
-                    <a href="./index.html">Inicio</a>
-                    <a href="#informacion">Informacion</a>
+                    <a href="./index.html"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="#informacion"><i class="fas fa-info-circle"></i> Informacion</a>
+                    <a href="./pages/logueo.html"><i class="fas fa-sign-in-alt"></i> Sign in</a>
                 </div>
             </div>
         </div>
@@ -45,9 +41,7 @@
              peludo y especial! 🐶🐱
           </p>
           <div class="wrap-cta">
-            <a href="./pages/logueo.html" class="cta-a"
-              >¡Registrate!</a
-            >
+            <a href="./pages/registro.html" class="cta-a">¡Registrate!</a>
           </div>
         </div>
         <img class="banner" src="https://img.huffingtonpost.com/asset/5fec98c426000017057a3581.jpeg?ops=1778_1000" alt="imagen banner" />
@@ -56,7 +50,9 @@
     <!-- Contenido Principal -->
     <main>
 
-  
+        <div>
+            <iframe src="https://vivirentremascotas.com/" title="Other Page" width="200%" height="100px" frameborder="0" scrolling="no"></iframe>
+          </div>
 
     </main>
 
@@ -66,34 +62,21 @@
         <!-- PREGUNTAS FRECUENTES -->
     <section class="section servicios-section">
         <div class="wrap-title-section">
-          <h3>Preguntas Frecuentes</h3>
+          <h3>Preguntas <span>Frecuentes</span></h3>
+        
         </div>
       </section>
       <!--Acordion de preguntas frecuentes-->
       <section class="acordeon">
         <div
-          class="card-acordeon accordion accordion-flush"
-          id="accordionFlushExample"
-        >
+          class="card-acordeon accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                id="accordionFlushfont"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
+              <button id="accordionFlushfont" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 ¿como hago parte de la red<br> <i>PetAmigo</i>?
               </button>
             </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 Puedes esperar ganar por comisiones sin límite superior, lo que
                 significa que tienes la oportunidad de generar ingresos
@@ -104,23 +87,11 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                id="accordionFlushfont"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
+              <button id="accordionFlushfont" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 ¿?
               </button>
             </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 No, nuestra empresa se dedica a fomentar el espíritu emprendedor
                 en todos sus miembros. Tus ingresos dependerán de tus habilidades
@@ -130,15 +101,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                id="accordionFlushfont"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
+              <button id="accordionFlushfont" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 ¿Dónde está registrada la empresa?
               </button>
             </h2>
@@ -182,8 +145,19 @@
         </div>
     </section>
 
-        <p>&copy; 2024 Tu Aplicación de Adopción de Animales</p>
+
     </footer>
+
+    <div class="header">
+        <div class="main-menu">
+            <div>
+                <a href="./index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="#informacion"><i class="fas fa-info-circle"></i> Informacion</a>
+                <a href="./pages/logueo.html"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+            </div>
+        </div>
+    </div>
+    
     <script src="./script/index.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
