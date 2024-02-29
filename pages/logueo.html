@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación de Adopción de Animales</title>
+    <link rel="stylesheet" href="../styles/logueo.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <div class="branding">
+                <h1>PetAmigo</h1>
+                <img src="https://www.pinclipart.com/picdir/big/105-1055779_patinhas-de-cachorro-png-footprint-cat-clipart.png" alt="Logo Pet Amigo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <h2>Iniciar Sesión</h2>
+                <form action="#" method="post">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+    
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <div class="opciones">
+                    <a href="./registro.html" onclick="abrirModal('registro-modal')">Registrarse</a>
+                    <a href="#" onclick="abrirModal('olvide-contrasena-modal')">¿Olvidó su contraseña?</a>
+                </div>
+                <a href="../index.html">Volver</a>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tu Aplicación de Adopción de Animales</p>
+    </footer>
+
+    <script src="../script/logueo.js"></script>
+
+</body>
+</html>

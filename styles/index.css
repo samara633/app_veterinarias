@@ -1,0 +1,116 @@
+/* Reset de estilos para mejorar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header, nav, main, footer {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Ajusta según sea necesario */
+    margin-top: 5px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.branding h1 {
+    margin-right: 10px; /* Espaciado entre el texto y la imagen */
+    font-size: 60px;
+}
+
+.branding img {
+    max-height: 60px;
+}
+
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    margin-top: 5px;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+} 
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+    color: #ffcc00;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de tamaño igual */
+    gap: 20px; /* Espacio entre las columnas */
+    align-items: center;
+    margin-right: 125px;
+    margin-left: 125px;
+}
+
+.section img {
+    max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 300%; /* Ajusta la altura automáticamente en proporción al ancho */
+    border-radius: 25%; /* Añade esquinas redondeadas u otros estilos según sea necesario */
+}
+
+.section p {
+    order: 1; /* Establece el orden del párrafo */
+    color: green;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publicidad, .imagenes-destacadas, .publicaciones-usuarios {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.publicidad, .imagenes-destacadas {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.publicacion-usuario {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

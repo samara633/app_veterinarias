@@ -1,0 +1,79 @@
+/* Reset de estilos para mejorar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header, main, footer {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Ajusta según sea necesario */
+    margin-top: 5px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.branding h1 {
+    margin-right: 10px; /* Espaciado entre el texto y la imagen */
+    font-size: 60px;
+}
+
+.branding img {
+    max-height: 60px;
+}
+
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 300px; /* Ajusta según sea necesario */
+}
+
+/* Estilos adicionales para las opciones */
+.opciones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.opciones a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.opciones a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
