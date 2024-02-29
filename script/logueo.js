@@ -59,3 +59,7 @@ function iniciarSesion(event) {
 }
 
 form.addEventListener('submit', iniciarSesion);
+
+function isUserLoggedIn() {
+    return localStorage.getItem('user') !== null; // Replace this with your actual user object storage method
+}
