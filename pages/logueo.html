@@ -23,12 +23,14 @@
             <div class="modal-content">
                 <span class="close" onclick="cerrarModal()">&times;</span>
                 <h2>Iniciar Sesión</h2>
-                <form action="#" method="post">
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" name="usuario" required>
+                <form action="#" method="post" id="login-form">
+                    <label for="usuario">Usuario (Correo Electrónico):</label>
+                    <input type="email" id="usuario" name="usuario" required>
     
                     <label for="contrasena">Contraseña:</label>
                     <input type="password" id="contrasena" name="contrasena" required>
+    
+                    <div id="message"></div> <!-- Add id="message" here -->
     
                     <button type="submit">Iniciar Sesión</button>
                 </form>
@@ -39,9 +41,7 @@
                 <a href="../index.html">Volver</a>
             </div>
         </div>
-    
     </main>
-
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Tu Aplicación de Adopción de Animales</p>

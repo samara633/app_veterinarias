@@ -1,0 +1,64 @@
+Para restringir el acceso a determinadas páginas y habilitar la funcionalidad solo después de que el usuario haya iniciado sesión,
+ puede seguir estos pasos:
+
+Cree una función de JavaScript para verificar si el usuario ha iniciado sesión. Esta función puede verificar si hay un objeto
+ de usuario en el almacenamiento local o una variable de sesión que indique el estado de autenticación del usuario.
+
+En el archivo HTML principal, agregue un detector de eventos para el DOMContentLoadedevento, que se activa cuando el
+ documento HTML inicial está completamente cargado y analizado. En este detector de eventos, llame a la función que
+  creó en el paso 1 para verificar si el usuario ha iniciado sesión.
+
+Según el estado de autenticación del usuario, puede mostrar u ocultar elementos HTML, como enlaces de navegación o áreas
+ de contenido, mediante JavaScript.
+
+A continuación se muestra un ejemplo de cómo puede implementar esto:
+
+En tuslogueo.jsarchivo, agregue la siguiente función para verificar si el usuario ha iniciado sesión:
+javascript
+
+function isUserLoggedIn() {
+    return localStorage.getItem('user') !== null; // Replace this with your actual user object storage method
+}
+En su archivo HTML principal, agregue un detector de eventos para el DOMContentLoadedevento y llame a la isUserLoggedInfunción:
+Para mostrar o ocultar elementos basados en si el usuario está loggeado o no, utilice esta función en su HTML. Por ejemplo, podría tener los
+
+Para mostrar o ocultar elementos según si el usuario está loggeado o no, utilice esta función en seguir  este código JavaScript:
+Para mostrar o ocultar elementos según si el usuario está loggeado o no, utilice esta función en su HTML. Por ejemplo, para esconder un bot
+Para mostrar o ocultar elementos basados en si el usuario está autenticado o no, utilice esta función en
+html
+
+<head>
+    <!-- ... -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const isLoggedIn = isUserLoggedIn();
+            if (!isLoggedIn) {
+                // Hide or disable elements for unauthenticated users
+                document.getElementById('content-container').style.display = 'none';
+                document.getElementById('login-link').style.display = 'block';
+            } else {
+                // Show or enable elements for authenticated users
+                document.getElementById('content-container').style.display = 'block';
+                document.getElementById('login-link').style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!-- ... -->
+        <nav>
+            <!-- ... -->
+            <a id="login-link" href="./login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <div id="content-container">
+        <!-- ... -->
+    </div>
+    <!-- ... -->
+</body>
+En este ejemplo, reemplace 'user'la isUserLoggedInfunción con la clave real que usa para almacenar el objeto de usuario en el almacenamiento local. Puede personalizar los elementos que deben ocultarse o mostrarse según el estado de autenticación del usuario.
+
+Tenga en cuenta que almacenar contraseñas en texto sin formato en el almacenamiento local no es seguro. En una aplicación del mundo real, debes aplicar hash y salt a las contraseñas antes de almacenarlas. Para este ejemplo, lo mantuve simple para demostrar el concepto.
+
+Por favor, avíseme si tiene más preguntas o inquietudes.
